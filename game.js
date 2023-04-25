@@ -1,4 +1,4 @@
-class Game {
+export default class Game {
 
     constructor(config = {}) {
         this.phaserConfig = {
