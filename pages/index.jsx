@@ -5,17 +5,16 @@ import Game from '../game'
 
 export default  function HomePage() {
   const [game, setGame] = useState('');
-  const tempGame = 
   useEffect(()=>{
     const tempGame = new Game({
       "id": "game",
       "width": window.innerWidth,
       "height": window.innerHeight
     });
-    setGame(()=> tempGame);
+    tempGame.createGame();
   }, []);
 
-  game.createGame();
+  
 
   return (
     <>
