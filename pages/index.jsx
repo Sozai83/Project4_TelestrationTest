@@ -14,8 +14,6 @@ export default  function HomePage() {
     tempGame.createGame();
   }, []);
 
-  
-
   return (
     <>
       <Head>
